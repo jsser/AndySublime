@@ -10,7 +10,7 @@
           { "trigger": "backgroundImage", "contents": "background-image: ${1:url($2)}${1/.+|($)/(?1:none)/};$0" },
           { "trigger": "backgroundOrigin", "contents": "background-origin: ${1:Border-Content-Padding}${1/(b$)|(bo$)|(c$)|(co$)|(p$)|(pa$)|.*/?1:order:?2:rder:?3:ontent:?4:ntent:?5:adding:?6:dding/i}-box;$0" },
           { "trigger": "backgroundPosition", "contents": "background-position: ${1:Left/Center/Right}${1/(l$)|(c$)|(r$)|.*/?1:eft:?2:enter:?3:ight/i} ${2:Top/Center/Bottom}${2/(t$)|(c$)|(b$)|.*/?1:op:?2:enter:?3:ottom/i};$0" },
-          { "trigger": "backgroundRepeat", "contents": "background-repeat: ${1/([xy]$)|.*/?1:repeat-/}${1:No-repeat/Repeat/repeat-X/repeat-Y}${1/(r$)|(n$)|(no$)|.*/(?1:epeat:?2:o-repeat:?3:-repeat/i};$0" },
+          { "trigger": "backgroundRepeat", "contents": "background-repeat: ${1:/([xy]$)|.*/?1:repeat-/}${1:No-repeat/Repeat/repeat-X/repeat-Y}${1:/(r$)|(n$)|(no$)|.*/(?1:epeat:?2:o-repeat:?3:-repeat/i};$0" },
           { "trigger": "backgroundSize", "contents": "background-size: ${1:Cover/COntain/Auto}${1/(c$)|(co$)|(a$)|(au$)|(aut$)|.*/?1:over:?2:ntain:?3:uto:?4:to:?5:o/i}${1/(a|au|aut|auto)$|([0-9.]+[a-z]+|[0-9.]+\\%)|.*/?1: auto:?2: $2/i};$0" },
 
           // { "trigger": "border", "contents": "border: ${1:_bwidf} ${2:_bstylz} ${3:_colourz};$0" },
